@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Cookie</title>
+</head>
+<body>
+    <h2>Cookie Value</h2>
+    @if (ViewData["CookieValue"] != null)
+    {
+        <p>Value: @ViewData["CookieValue"]</p>
+    }
+    else
+    {
+        <p>Cookie not found.</p>
+    }
+
+    <a href="/">Go back to the form</a>
+</body>
+</html>
